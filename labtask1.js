@@ -20,7 +20,7 @@ if (number > 0) {
     console.log("The number is Zero");
 }
 
-// Task 23: Simple Login System
+// Task 3: Simple Login System
 let correctUsername = "admin";
 let correctPassword = "1234";
 
@@ -33,7 +33,7 @@ if (enteredUsername === correctUsername && enteredPassword === correctPassword) 
     console.log("Invalid Credentials");
 }
 
-// Task 3: Electricity Bill
+// Task 4: Electricity Bill
 let units = 250;
 let bill = 0;
 
@@ -47,21 +47,21 @@ if (units <= 100) {
 console.log("Units consumed:", units);
 console.log("Total Electricity Bill:", bill);
 
-// Task 4: Print Even Numbers 1–50
+// Task 5: Print Even Numbers 1–50
 console.log("Even numbers from 1 to 50:");
 for (let i = 2; i <= 50; i += 2) {
     process.stdout.write(i + " ");
 }
 console.log();
 
-// Task 5: Reverse Counting (20 to 1)
+// Task 6: Reverse Counting (20 to 1)
 console.log("Reverse counting from 20 to 1:");
 for (let i = 20; i >= 1; i--) {
     process.stdout.write(i + " ");
 }
 console.log();
 
-// Task 6: Factorial Calculator
+// Task 7: Factorial Calculator
 let factNum = 5;
 let factorial = 1;
 
@@ -70,20 +70,20 @@ for (let i = factNum; i >= 1; i--) {
 }
 console.log("Factorial of", factNum, "is:", factorial);
 
-// Task 7: Count Digits
+// Task 8: Count Digits
 let digitNum = 12345;
 let digitCount = digitNum.toString().length;
 console.log("Number:", digitNum);
 console.log("Number of digits:", digitCount);
 
-// Task 8: Sum of Even Numbers (1–100)
+// Task 9: Sum of Even Numbers (1–100)
 let evenSum = 0;
 for (let i = 2; i <= 100; i += 2) {
     evenSum += i;
 }
 console.log("Sum of even numbers from 1 to 100:", evenSum);
 
-// Task 9: Prime Number Checker
+// Task 10: Prime Number Checker
 let primeNum = 17;
 let isPrime = true;
 
@@ -99,7 +99,7 @@ if (primeNum <= 1) {
 }
 console.log(primeNum, isPrime ? "is a Prime number" : "is not a Prime number");
 
-// Task 10: ATM Machine
+// Task 11: ATM Machine
 let balance = 5000;
 let withdrawAmount = 2000;
 
@@ -113,7 +113,7 @@ if (withdrawAmount <= balance) {
     console.log("Insufficient balance");
 }
 
-// Task 11: Password Strength Checker
+// Task 12: Password Strength Checker
 let password = "Hello123";
 let hasMinLength = password.length >= 8;
 let hasNumber = /[0-9]/.test(password);
@@ -129,7 +129,7 @@ if (hasMinLength && hasNumber && hasUppercase) {
     if (!hasUppercase) console.log("- Must contain an uppercase letter");
 }
 
-// Task 12: FizzBuzz (1–50)
+// Task 13: FizzBuzz (1–50)
 console.log("FizzBuzz from 1 to 50:");
 for (let i = 1; i <= 50; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
